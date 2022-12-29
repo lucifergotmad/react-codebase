@@ -24,10 +24,10 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks", "autofix", "unused-imports"],
   "rules": {
+    "import/prefer-default-export": "off",
     "max-len": ["error", { "code": 120 }],
-    "no-duplicate-imports": "error",
     "quotes": ["error", "single"],
-    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "no-underscore-dangle": ["error", { "allow": ["_id", "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] }],
     "spaced-comment": "error",
     "camelcase": "error",
     "react/jsx-uses-vars": "error",
@@ -37,8 +37,6 @@
     "react/no-unescaped-entities": ["off"],
     "react-hooks/exhaustive-deps": "error",
     "react-hooks/rules-of-hooks": "error",
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
