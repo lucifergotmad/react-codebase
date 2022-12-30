@@ -24,6 +24,7 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks", "autofix", "unused-imports"],
   "rules": {
+    "arrow-body-style": "off",
     "import/prefer-default-export": "off",
     "max-len": ["error", { "code": 120 }],
     "quotes": ["error", "single"],
@@ -37,6 +38,7 @@
     "react/no-unescaped-entities": ["off"],
     "react-hooks/exhaustive-deps": "error",
     "react-hooks/rules-of-hooks": "error",
+    "react/function-component-definition": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",

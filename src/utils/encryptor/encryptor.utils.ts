@@ -1,5 +1,7 @@
-const ENCKEY = process.env.REACT_APP_ENCRYPTION_KEY ?? 'binary1010';
-const IS_ENC = Boolean(process.env.REACT_APP_ENCRYPTION_MODE) ?? false;
+import { ENV_VARIABLES } from '../../shared/constants/env.const';
+
+const ENCKEY = ENV_VARIABLES.ENCRYPTION_KEY ?? 'fdashflha';
+const IS_ENC = Boolean(ENV_VARIABLES.ENCRYPTION_MODE) ?? false;
 
 const hexEncode = (str: number) => {
   const result = str.toString(16);
