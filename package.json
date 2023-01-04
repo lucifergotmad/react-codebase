@@ -12,6 +12,7 @@
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "@types/react-redux": "^7.1.24",
+    "@types/redux-persist": "^4.3.1",
     "@types/redux-saga": "^0.10.5",
     "axios": "^1.2.1",
     "dotenv": "^16.0.3",
@@ -29,6 +30,7 @@
     "redux-saga": "^1.2.2",
     "reselect": "^4.1.7",
     "styled-components": "^5.3.6",
+    "typed-redux-saga": "^1.5.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

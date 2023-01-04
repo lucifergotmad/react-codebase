@@ -8,7 +8,7 @@ import createSagaMiddleware from 'redux-saga';
 import type { PersistConfig } from 'redux-persist';
 import type { Middleware } from 'redux';
 
-import { rootSaga } from './root-saga';
+// import { rootSaga } from './root-saga';
 import { rootReducer } from './root-reducer';
 
 export type RootState = ReturnType<typeof rootReducer>;
@@ -23,7 +23,7 @@ type ExtendedPersistConfig = PersistConfig<RootState> & {
   whitelist: (keyof RootState)[]
 };
 
-const persistConfig: ExtendedPersistConfig = {
+export const persistConfig: ExtendedPersistConfig = {
   key: 'root',
   storage,
   whitelist: [],
@@ -47,6 +47,6 @@ const composedEnhancers = composeEnhancer(applyMiddleware(...middlewares));
 
 export const store = configureStore({ reducer: persistedReducer, enhancers: [composedEnhancers] });
 
-sagaMiddleware.run(rootSaga);
+// sagaMiddleware.run(rootSaga);
 
 export const persistor = persistStore(store);

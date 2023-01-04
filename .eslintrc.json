@@ -22,13 +22,23 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks", "autofix", "unused-imports"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "react-hooks",
+    "autofix",
+    "unused-imports"
+  ],
   "rules": {
     "arrow-body-style": "off",
     "import/prefer-default-export": "off",
     "max-len": ["error", { "code": 120 }],
     "quotes": ["error", "single"],
-    "no-underscore-dangle": ["error", { "allow": ["_id", "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] }],
+    "no-underscore-dangle": [
+      "error",
+      { "allow": ["_id", "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"] }
+    ],
     "spaced-comment": "error",
     "camelcase": "error",
     "react/jsx-uses-vars": "error",
@@ -39,10 +49,16 @@
     "react-hooks/exhaustive-deps": "error",
     "react-hooks/rules-of-hooks": "error",
     "react/function-component-definition": "off",
+    "@typescript-eslint/default-param-last": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
-      { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
     ],
     "@typescript-eslint/consistent-type-imports": [
       "error",
